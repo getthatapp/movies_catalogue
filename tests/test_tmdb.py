@@ -3,7 +3,7 @@ from movies_catalogue import tmdb_client
 
 
 def test_get_single_movie(monkeypatch):
-    mock_single_movie = {'movie_id': 1, 'title': 'Test Movie', 'overwiev': 'Test Overwiev'}
+    mock_single_movie = {'movie_id': 1, 'title': 'Test Movie', 'overview': 'Test Overview'}
     requests_mock = Mock()
     response = requests_mock.return_value
     response.status_code = 200
